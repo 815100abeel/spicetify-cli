@@ -234,7 +234,8 @@ func main() {
 	if slices.Contains(commands, "upgrade") || slices.Contains(commands, "update") {
 		updateStatus := cmd.Update(version)
 		if updateStatus {
-			ex, err := os.Executable()
+			ex, err := os.Executable()spicetify spotify
+			
 			if err != nil {
 				ex = "spicetify"
 			}
